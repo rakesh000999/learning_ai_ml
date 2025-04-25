@@ -14,3 +14,9 @@ if st.button("Add Fruit"):
     if new_fruit:
         fruits.append(new_fruit)
         st.write("Updated list:", fruits)
+
+neww_fruit = st.text_input("Enter a fruit to remove:")
+if st.button("Remove fruit"):
+    if neww_fruit in fruits:
+        fruits.remove(neww_fruit)
+        st.write("Updated List:", fruits)
